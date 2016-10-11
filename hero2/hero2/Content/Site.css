@@ -1,0 +1,77 @@
+﻿body {
+    background-color:black;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+div{
+    background-color:palegoldenrod;
+}
+div span img{
+    width:100px;
+    height:100px;
+}
+div img {
+    width:300px;
+    padding:10px;
+
+}
+p{
+    font-family:"Comic Sans MS",cursive, sans-serif;
+    font-size:14px;
+}
+
+a{
+    font-family:"Comic Sans MS",cursive, sans-serif;
+    font-size:14px;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#contact div.row
+{
+clear:left;
+margin:6px;
+}
+#contact label
+{
+
+width:200px;
+margin-left:70px;
+
+}
+#contact textarea
+{
+width:200px;
+height:100px;
+
+}
+#contact input
+{
+width:200px;
+}
+div.buttons
+{
+margin-left:150px;
+margin-top:16px;
+
+}
+#error{
+    color:red;
+}

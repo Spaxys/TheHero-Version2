@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Lost";
+}
+<div class="row">
+    <div class="col-md-6">
+        <p>
+            Our hero decides to attack the dragon. But the dragon was prepared and with his massive army the Hero surely didnt stand a chance.
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="~/Content/Images/BraveHEro.jpg" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="~/Content/Images/DragonDecision.jpg" />
+    </div>
+    <div class="col-md-6">
+        <p>
+            The hero tried his best and fought bravely. Eventually he was defeated and captured. The hero was in chains when he was brought up to the evil dragon king so the heros fate could be decided.
+
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <p>
+            The dragon used his evil power and turned our hero into a new evil sorcerer who forever now shall guard the secret passage gate...
+
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="~/Content/Images/New Sorcerer.jpg" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10"> You lost...Game Over</div>
+
+    <div class="col-md-2">
+        <button class="btn-default">
+            @Html.ActionLink("Replay", "Intro")
+         </button>
+        <button class="btn-default">
+        @Html.ActionLink("Choose new adventure", "ChooseAdventure")</button>
+    </div>
+</div>
+
+
+
+

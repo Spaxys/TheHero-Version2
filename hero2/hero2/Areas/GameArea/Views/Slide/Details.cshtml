@@ -1,0 +1,28 @@
+﻿@model hero2.Entities.Slide
+
+<div>
+    <h4>Slide</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GameId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GameId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "End_Fight";
+}
+<div class="row">
+    <p>
+        End Fight
+    </p>
+    <div class="col-md-6">
+        <p>
+            Our Hero opens the gates to the castle. He knows that only he can save the princess and that he must be brave.
+
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="~/Content/Images/CastleGates.jpg" />
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+
+        <img src="~/Content/Images/Decision.jpg" />
+    </div>
+    <div class="col-md-6">
+        <p>
+            But he forgot to think of a plan on how to defeat the evil king dragon. He used up his magical sword flame and now must think of a new plan to save the princess.
+
+        </p>
+    </div>
+</div>
+<div class="row">
+    <p>
+        He still has the element of surprise, should he try to avoid confrontation and just rescue the queen from her cell. Or should he try his luck with defeating the dragon?
+
+    </p>
+</div>
+<div class="row">
+    <p>
+        What will our hero do:
+    </p>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <button class="btn-default">
+            @Html.ActionLink("Quietly save the princess", "Win")
+        </button>
+    </div>
+    <div class="col-md-6">
+        <button class="btn-default">
+            @Html.ActionLink("Battle the dragon", "Lost")
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="~/Content/Images/quietsave.jpg" />
+    </div>
+
+    <div class="col-md-6">
+        <img src="~/Content/Images/Dragon.png" />
+    </div>
+</div>
+
+
+
+

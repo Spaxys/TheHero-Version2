@@ -1,0 +1,12 @@
+﻿@model hero2.Entities.Slide
+@using hero2.Logic
+
+ @foreach(var c in Model.Items)
+ {
+     <div>
+         @if (c.isCorrectData())
+         {
+             c.displayItem();
+         }
+     </div>
+ }

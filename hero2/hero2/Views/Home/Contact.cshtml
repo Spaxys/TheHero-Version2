@@ -1,0 +1,59 @@
+﻿@model hero2.Models.ContactModels
+@{
+    ViewBag.Title = "Contact us";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@*<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>*@
+
+@*<address>
+    <strong>Nemo Jovanovic</strong>   <a href="mailto:Nemo.Jovanovic@gmail.com">Nemo.Jovanovic@gmail.com"</a><br />
+    <strong>Nada Mehanna</strong> <a href="mailto:nada.j.mehanna@gmail.com">nada.j.mehanna@gmail.com</a>
+    <br />
+    <strong>Andree Ivarsson</strong> <a href="mailto:andree.ivarsson@gmail.com">andree.ivarsson@gmail.com</a>
+    <br />
+    <strong>Daniel Webiörn</strong> <a href="mailto:daniel.webiörn@gmail.com">daniel.webiörn@gmail.com</a>
+    <br />
+    <strong>Ehsan </strong> <a href="mailto:barname22@gmail.com">barname22@gmail.com</a>
+    <br />
+    <strong>Jawwad Rahman</strong> <a href="mailto:JawwadRahmanChowdhury@gmail.com">JawwadRahmanChowdhury@gmail.com</a>
+    <br />
+    <strong>Zafar Iqbal</strong> <a href="mailto:rasalunic@gmail.com">rasalunic@gmail.com</a>
+</address>*@
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <div class="row" id="contact">
+        @Html.LabelFor(model => model.FirstName, "First Name:")
+        @Html.EditorFor(model => model.FirstName)
+        <span id="error">@Html.ValidationMessageFor(model => model.FirstName)</span>
+    </div>
+    <div class="row" id="contact">
+        @Html.LabelFor(model => model.LastName, "Last Name:")
+        @Html.EditorFor(model => model.LastName)
+        <span id="error">  @Html.ValidationMessageFor(model => model.LastName)</span>
+</div>
+    <div class="row" id="contact">
+        @Html.LabelFor(model => model.Email, "Email:")
+        @Html.EditorFor(model => model.Email)
+        <span id="error">@Html.ValidationMessageFor(model => model.Email)</span>
+</div>
+    <div class="row" id="contact">
+        @Html.LabelFor(model => model.Comment, "Comments:")
+        @Html.TextAreaFor(model => model.Comment)
+        <span id="error">@Html.ValidationMessageFor(model => model.Comment)</span>
+</div>
+    <div class="buttons">
+        <div class="row">
+            <input type="submit" value="submit" />
+            <input type="reset" value="reset" />
+        </div>
+    </div>
+}
